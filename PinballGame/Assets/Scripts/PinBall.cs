@@ -11,11 +11,11 @@ public class PinBall : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Bumper")
-        {
-            Destroy(gameObject);
-            ScoreScript.ScoreValue += 1;
-        }
+       // if (other.gameObject.tag == "Bumper")
+       // {
+            //Destroy(gameObject);
+            //ScoreScript.ScoreValue += 1;
+        //}
     }
     // Update is called once per frame
     void Update()

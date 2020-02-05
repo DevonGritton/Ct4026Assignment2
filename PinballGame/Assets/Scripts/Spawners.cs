@@ -14,12 +14,18 @@ public class Spawners : MonoBehaviour
     public GameObject Ball;
 
     [SerializeField]
+    public GameObject Gate;
+
+    [SerializeField]
     public float countdown = 5f;
+
+    [SerializeField]
+    private float delay = 3f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Gate.SetActive(true);
     }
     private void fire()
     {
@@ -37,11 +43,21 @@ public class Spawners : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        delay += Time.deltaTime;
         countdown -= Time.deltaTime;
         if (countdown <= 0)
         {
             fire();
+            delay = 0f;
             countdown = 5f;
+        }
+        if (delay <= 2)
+        {
+            Gate.SetActive(false);
+        }
+        else
+        {
+            Gate.SetActive(true);
         }
     }
 }

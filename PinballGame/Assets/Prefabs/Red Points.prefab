@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2569009099976297742}
   - component: {fileID: 1867930795349950087}
   - component: {fileID: 8487896831631597496}
+  - component: {fileID: 6080542453166683691}
   m_Layer: 0
   m_Name: Red Points
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887480701506759153}
-  m_LocalRotation: {x: -0.24000855, y: -2.0249414e-13, z: 0.000000089884864, w: 0.9707708}
+  m_LocalRotation: {x: -0.24000774, y: 0, z: 0, w: 0.970771}
   m_LocalPosition: {x: 1062.8, y: 256.98224, z: -556.8759}
   m_LocalScale: {x: 38.024906, y: 38.024906, z: 38.024906}
   m_Children: []
@@ -86,8 +87,21 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887480701506759153}
   m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.55
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!135 &6080542453166683691
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887480701506759153}
+  m_Material: {fileID: 13400000, guid: 3cb74b1ce2f324248879660bdf8fb4f6, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.0000019073486, z: 0}
