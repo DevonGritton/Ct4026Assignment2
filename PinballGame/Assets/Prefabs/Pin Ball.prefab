@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 161380327257492669}
   - component: {fileID: 161380327257492670}
   - component: {fileID: 161380327257492671}
-  - component: {fileID: 161380327257492664}
   - component: {fileID: 161380327257492665}
   - component: {fileID: 161380327257492666}
   - component: {fileID: 7302193814956821719}
+  - component: {fileID: 7117850611037764535}
   m_Layer: 0
   m_Name: Pin Ball
   m_TagString: Ball
@@ -81,19 +81,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &161380327257492664
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 161380327257492667}
-  m_Material: {fileID: 13400000, guid: 3cb74b1ce2f324248879660bdf8fb4f6, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.59
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &161380327257492665
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -135,3 +122,16 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.35
   m_Center: {x: 0, y: -0.0000076293945, z: 0}
+--- !u!135 &7117850611037764535
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161380327257492667}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

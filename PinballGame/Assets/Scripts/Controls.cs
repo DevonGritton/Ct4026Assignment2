@@ -9,19 +9,23 @@ public class Controls : MonoBehaviour
     public float pressedPosition = 45f;
     public float hitStrength = 10000f;
     public float flipperDamper = 150f;
-    HingeJoint hinge;
     public string inputName;
+
+    private HingeJoint hinge = null;
     // Start is called before the first frame update
 
     void Start()
     {
         hinge = GetComponent<HingeJoint>();
         hinge.useSpring = true;
+        
+       
+        hinge.useLimits = true;
     }
     // Update is called once per frame
     void Update()
     {
-        JointSpring spring = new JointSpring();
+        JointSpring spring = hinge.spring;
         spring.spring = hitStrength;
         spring.damper = flipperDamper;
 
@@ -33,16 +37,16 @@ public class Controls : MonoBehaviour
         {
             spring.targetPosition = restPosition;
         }
+
         hinge.spring = spring;
-        hinge.useLimits = true;
-        //if (Input.GetKey(KeyCode.W))
-       // {
-        //    left();   
-        //}
-       // else if(Input.GetKey(KeyCode.S))
-       // {
-       //     down();
-       // }
+        if (Input.GetKey(KeyCode.W))
+        {
+            left();   
+        }
+        else if(Input.GetKey(KeyCode.S))
+        {
+            down();
+        }
     }
     void left()
     {
