@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ball
   - Bumper
+  - Killbox
   layers:
   - Default
   - TransparentFX
