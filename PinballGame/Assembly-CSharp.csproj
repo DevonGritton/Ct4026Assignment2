@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Imported Assets\Starfield Skybox\Demo\Script\LookCamera.cs" />
+    <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Controls.cs" />
     <Compile Include="Assets\Scripts\DeathScreen.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\Scripts\ShaderScript.cs" />
     <Compile Include="Assets\Scripts\Spawners.cs" />
     <Compile Include="Assets\Scripts\SplashSequence.cs" />
+    <Compile Include="Assets\Settings.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/tooth/OneDrive/Desktop/Ct4026Assignment2/PinballGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
