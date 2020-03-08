@@ -5,9 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class DeathScreen : MonoBehaviour
 {
+    public Health healthbar;
+    public void Update()
+    {
+       // if (healthbar.setHealth <= 0)
+       // {
+       //     back();
+       // }  
+    }
 
     public void back()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        SceneManager.LoadScene("GameOver");
     }
 }

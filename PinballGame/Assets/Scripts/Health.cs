@@ -5,17 +5,21 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    Text health;
-    public static int HpValue = 10;
-    // Start is called before the first frame update
-    void Start()
-    {
-        health = GetComponent<Text>();
-    }
+    public Slider slider;
+    public Gradient Gradient;
+    public Image fill;
 
-    // Update is called once per frame
-    void Update()
+    public void SetHealth(int health)
     {
-        health.text = HpValue.ToString();
+        slider.value = health;
+
+        fill.color = Gradient.Evaluate(slider.normalizedValue);
+    }
+    public void SetMaxHealth(int health)
+    {
+        slider.value = health;
+        slider.value = health;
+
+        fill.color = Gradient.Evaluate(1f);
     }
 }

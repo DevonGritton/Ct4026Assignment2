@@ -27,7 +27,7 @@ public class Door : MonoBehaviour
             counter = 1.5f;
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if(other.gameObject.tag == "Ball")
         {
