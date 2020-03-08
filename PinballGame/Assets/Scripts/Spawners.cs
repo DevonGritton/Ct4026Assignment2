@@ -6,15 +6,14 @@ public class Spawners : MonoBehaviour
 {
     public Transform launchPoint;
     public Transform Target;
+    public GameObject[] ActiveBall;
+
 
     [SerializeField]
     private float BallSpeed = 1000.0f;
 
     [SerializeField]
     public GameObject Ball;
-
-    [SerializeField]
-    public GameObject Gate;
 
     [SerializeField]
     public float countdown = 5f;
@@ -25,7 +24,7 @@ public class Spawners : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Gate.SetActive(true);
+
     }
     private void fire()
     {
@@ -43,21 +42,27 @@ public class Spawners : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        delay += Time.deltaTime;
-        countdown -= Time.deltaTime;
-        if (countdown <= 0)
+        ActiveBall = GameObject.FindGameObjectsWithTag("Ball");
+        if (ActiveBall.Length == 0)
         {
             fire();
-            delay = 0f;
-            countdown = 5f;
         }
-        if (delay <= 2)
-        {
-            Gate.SetActive(false);
-        }
-        else
-        {
-            Gate.SetActive(true);
-        }
+        //  delay += Time.deltaTime;
+        //  countdown -= Time.deltaTime;
+        //  if (countdown <= 0)
+        // {
+        //      fire();
+        //       delay = 0f;
+        //       countdown = 5f;
+        //  }
+        //  if (delay <= 2)
+        //  {
+        //      Gate.SetActive(false);
+        // }
+        //  else
+        //  {
+        //     Gate.SetActive(true);
+        // }
+        //}
     }
 }
