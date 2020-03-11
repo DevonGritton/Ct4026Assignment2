@@ -17,4 +17,10 @@ public class ScoreScript : MonoBehaviour
     {
         score.text = ScoreValue.ToString();
     }
+
+    void Score()
+    {
+        PlayerPrefs.SetFloat("UserScore", ScoreValue);
+    }
+
 }

@@ -28,10 +28,11 @@ public class ShaderScript : MonoBehaviour
     {
         if (death)
         {
+            Health += 0.5f * Time.deltaTime;
             dissolveMat.SetFloat("Vector1_C42086C0", Health);
-            Health = Time.deltaTime + 0.1f;
-            MaxHealth -= Time.deltaTime;
-            if (MaxHealth <= 0)
+            
+            MaxHealth -= 0.2f * Time.deltaTime;
+            if (Health >= MaxHealth)
             {
                 Destroy(gameObject);
                 dissolveMat.SetFloat("Vector1_C42086C0", -1);

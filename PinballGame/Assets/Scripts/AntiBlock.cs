@@ -8,7 +8,7 @@ public class AntiBlock : MonoBehaviour
     float counter;
     [SerializeField]
     GameObject door;
-    void Start()
+    void Start()                               
     {
         Active = true;
     }

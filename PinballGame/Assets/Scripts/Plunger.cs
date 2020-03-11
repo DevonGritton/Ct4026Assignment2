@@ -46,11 +46,6 @@ public class Plunger : MonoBehaviour
             power = 0f;
         }
     }
-
-
-
-
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Ball"))

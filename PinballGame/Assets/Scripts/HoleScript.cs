@@ -13,10 +13,22 @@ public class HoleScript : MonoBehaviour
     public void Start()
     {
         timer = 2.0f;
-        healthbar.SetMaxHealth(maxHealth);
-        maxHealth = currentHealth;
+        
+        //maxHealth = currentHealth;
         hit = false;
         ricoshet = false;
+
+        int savedHealth = Health.CurrentHealth;
+        if (savedHealth != 0)
+        {
+            currentHealth = savedHealth;
+        }
+        else
+        {
+            currentHealth = maxHealth;
+
+        }
+        healthbar.SetHealth(currentHealth);
     }             
     void OnTriggerEnter(Collider other)
     {
