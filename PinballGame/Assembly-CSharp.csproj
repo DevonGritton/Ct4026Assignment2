@@ -62,6 +62,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\48 Particle Effect Pack\Script\csDestroyEffect.cs" />
+    <Compile Include="Assets\48 Particle Effect Pack\Script\csMouseOrbit.cs" />
+    <Compile Include="Assets\48 Particle Effect Pack\Script\csParticleEffectPackLightControl.cs" />
+    <Compile Include="Assets\48 Particle Effect Pack\Script\csParticleMove.cs" />
+    <Compile Include="Assets\48 Particle Effect Pack\Script\csShowAllEffect.cs" />
+    <Compile Include="Assets\48 Particle Effect Pack\ShurikenEffectEditor\csShurikenEffectChanger.cs" />
+    <Compile Include="Assets\48 Particle Effect Pack\ShurikenEffectEditor\csShurikenEffectEditor.cs" />
     <Compile Include="Assets\Imported Assets\Starfield Skybox\Demo\Script\LookCamera.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
@@ -364,13 +371,13 @@
       <HintPath>C:/Users/s1904477/Desktop/Ct4026Assignment2/PinballGame/Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/s1904477/Desktop/Ct4026Assignment2/PinballGame/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/s1904477/Desktop/Ct4026Assignment2/PinballGame/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/s1904477/Desktop/Ct4026Assignment2/PinballGame/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/s1904477/Desktop/Ct4026Assignment2/PinballGame/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/s1904477/Desktop/Ct4026Assignment2/PinballGame/Library/PackageCache/com.unity.analytics@3.3.5/Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>C:/Users/s1904477/Desktop/Ct4026Assignment2/PinballGame/Library/PackageCache/com.unity.analytics@3.3.5/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

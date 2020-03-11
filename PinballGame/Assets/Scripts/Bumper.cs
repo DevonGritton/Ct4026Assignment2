@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class Bumper : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField]
+    GameObject Effect;
+    private void OnCollisionEnter(Collision other) // will call when the object collides with another
     {
-        
+        if (other.collider.CompareTag("Ball"))
+        {
+            Instantiate(Effect, transform.position, transform.rotation);//activates the assigned particle effect
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    private void OnTriggerEnter(Collider other)
+private void OnTriggerEnter(Collider other)
     {
         ScoreScript.ScoreValue += 1;
     }

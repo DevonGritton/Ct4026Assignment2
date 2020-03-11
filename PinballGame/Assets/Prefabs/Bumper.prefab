@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2352490285099828063}
   - component: {fileID: 7340601026350115256}
   - component: {fileID: 7340601026350115262}
-  - component: {fileID: 7340601026350115259}
+  - component: {fileID: 8307325298951890468}
   m_Layer: 0
   m_Name: Bumper
   m_TagString: Untagged
@@ -61,7 +61,7 @@ CapsuleCollider:
   m_Height: 244.83359
   m_Direction: 1
   m_Center: {x: -1.8617817, y: 26.616844, z: 16.758326}
---- !u!114 &7340601026350115259
+--- !u!114 &8307325298951890468
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,6 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59dfb90bd0bc32b40ae3b0cbc01c232b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Effect: {fileID: 100004, guid: 96536afb634b32043bb988d4576053d3, type: 3}
 --- !u!1 &8900357922009283346
 GameObject:
   m_ObjectHideFlags: 0
