@@ -74,6 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Effect: {fileID: 100004, guid: 96536afb634b32043bb988d4576053d3, type: 3}
+  text: {fileID: 5605814728195725780, guid: 57e8128759d02ff4abd7b536b1ee11dc, type: 3}
 --- !u!1 &8900357922009283346
 GameObject:
   m_ObjectHideFlags: 0

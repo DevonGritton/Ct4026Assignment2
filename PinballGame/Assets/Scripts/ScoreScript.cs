@@ -5,10 +5,12 @@ using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour
 {
     Text score;
+   
     public static int ScoreValue = 10;
     // Start is called before the first frame update
     void Start()
     {
+       
         score = GetComponent<Text>();
     }
 
@@ -20,7 +22,7 @@ public class ScoreScript : MonoBehaviour
 
     void Score()
     {
-        PlayerPrefs.SetFloat("UserScore", ScoreValue);
+        PlayerPrefs.SetInt("UserScore", ScoreValue);
     }
 
 }

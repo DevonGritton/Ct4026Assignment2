@@ -8,10 +8,10 @@ public class DeathScreen : MonoBehaviour
     public Health healthbar;
     public void Update()
     {
-       // if (healthbar.setHealth <= 0)
-       // {
-       //     back();
-       // }  
+       if (Health.CurrentHealth == 0)
+        {
+            back();
+        }  
     }
 
     public void back()
