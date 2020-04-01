@@ -2916,7 +2916,7 @@ PrefabInstance:
     - target: {fileID: 2352490285099828063, guid: 8b4a544000b09e0418bdce89b8971110,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.210402
+      value: -5.81
       objectReference: {fileID: 0}
     - target: {fileID: 2352490285099828063, guid: 8b4a544000b09e0418bdce89b8971110,
         type: 3}
@@ -3915,6 +3915,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlungerAnimObj
       objectReference: {fileID: 0}
+    - target: {fileID: 511872235, guid: 3d89ec2eeae2da74d91c3c8a893709a0, type: 3}
+      propertyPath: plungerSlider
+      value: 
+      objectReference: {fileID: 2135501504}
+    - target: {fileID: 1792067261783573360, guid: 3d89ec2eeae2da74d91c3c8a893709a0,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 2135501504}
     - target: {fileID: 6437823439734101375, guid: 3d89ec2eeae2da74d91c3c8a893709a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3970,15 +3979,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1792067261783573360, guid: 3d89ec2eeae2da74d91c3c8a893709a0,
-        type: 3}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 2135501504}
-    - target: {fileID: 511872235, guid: 3d89ec2eeae2da74d91c3c8a893709a0, type: 3}
-      propertyPath: plungerSlider
-      value: 
-      objectReference: {fileID: 2135501504}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d89ec2eeae2da74d91c3c8a893709a0, type: 3}
 --- !u!114 &1602034064 stripped
