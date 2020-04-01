@@ -11,8 +11,8 @@ public class Controls : MonoBehaviour
     public float flipperDamper = 150f;
     public string inputName;
 
-    private HingeJoint hinge = null;
-    // Start is called before the first frame update
+    public HingeJoint hinge = null;
+    // Start is called before the first frame updaste
 
     void Start()
     {
@@ -39,24 +39,55 @@ public class Controls : MonoBehaviour
         }
 
         hinge.spring = spring;
-        if (Input.GetKey(KeyCode.W))
-        {
-            left();   
-        }
-        else if(Input.GetKey(KeyCode.S))
-        {
-            down();
-        }
     }
-    void left()
+   public void left()
     {
+        JointSpring spring = hinge.spring;
+        spring.spring = hitStrength;
+        spring.damper = flipperDamper;
 
-        //transform.RotateAround(leftpoint.transform.position, leftpoint.transform.up, -300 * Time.deltaTime);
-        //rotationvalues = Mathf.Clamp(rotationvalues, VerticalMinMax.x, VerticalMinMax.y);
+        if (Input.GetAxis(inputName) == 1)
+        {
+            spring.targetPosition = pressedPosition;
+        }
+        else
+        {
+            spring.targetPosition = restPosition;
+        }
+
+        hinge.spring = spring;
+        // JointSpring spring = hinge.spring;
+        // spring.spring = hitStrength;
+        // spring.damper = flipperDamper;
+
+        //spring.targetPosition = pressedPosition;
+
+        // hinge.spring = spring;
+
     }
-    void down()
+   public void down()
     {
-        //transform.RotateAround(leftpoint.transform.position, leftpoint.transform.up, 300 * Time.deltaTime);
+        JointSpring spring = hinge.spring;
+        spring.spring = hitStrength;
+        spring.damper = flipperDamper;
+
+        if (Input.GetAxis(inputName) == 1)
+        {
+            spring.targetPosition = pressedPosition;
+        }
+        else
+        {
+            spring.targetPosition = restPosition;
+        }
+
+        hinge.spring = spring;
+        //  JointSpring spring = hinge.spring;
+        // spring.spring = hitStrength;
+        // spring.damper = flipperDamper;
+
+        //spring.targetPosition = pressedPosition;
+
+        // hinge.spring = spring;
     }
 
 }
