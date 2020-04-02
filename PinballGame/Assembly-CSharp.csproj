@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\Spawners.cs" />
     <Compile Include="Assets\Scripts\SplashSequence.cs" />
     <Compile Include="Assets\Scripts\sliderScript.cs" />
+    <Compile Include="Assets\TapControls.cs" />
     <Compile Include="Assets\Touchcontrols.cs" />
     <Compile Include="Assets\TouchscreenLeft.cs" />
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">

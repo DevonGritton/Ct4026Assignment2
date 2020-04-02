@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class TouchscreenLeft : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class TouchscreenLeft : MonoBehaviour
 {
     [SerializeField]
     public float restPosition = 0f;
@@ -30,29 +30,40 @@ public class TouchscreenLeft : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     // Update is called once per frame
     void Update()
     {
+
+        pressed();
+       // JointSpring spring = hinge.spring;
+      //  spring.spring = hitStrength;
+      //  spring.damper = flipperDamper;
+      //  if (Lactive == true)
+      ////  {
+       //     spring.targetPosition = pressedPosition;
+     //   }
+      //  else
+      //  {
+      //      spring.targetPosition = restPosition;
+      //  }
+
+       // hinge.spring = spring;
+    }
+    public void pressed()
+    {
         JointSpring spring = hinge.spring;
         spring.spring = hitStrength;
         spring.damper = flipperDamper;
 
-        if (Lactive == true)
+        while (Lactive == true)
         {
             spring.targetPosition = pressedPosition;
         }
-        else
+        while (Lactive == false)
         {
             spring.targetPosition = restPosition;
         }
 
         hinge.spring = spring;
     }
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        Lactive = true;
-    }
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        Lactive = false;
-    }
+
 }
 
 

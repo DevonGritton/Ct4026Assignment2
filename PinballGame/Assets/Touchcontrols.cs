@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Touchcontrols : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class Touchcontrols : MonoBehaviour
 {
     [SerializeField]
     public float restPosition = 0f;
@@ -25,33 +25,43 @@ public class Touchcontrols : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         hinge.useLimits = true;
     }
     // Start is called before the first frame update
- 
+
 
     // Update is called once per frame
     void Update()
+    {
+
+        pressed();
+        // JointSpring spring = hinge.spring;
+        //  spring.spring = hitStrength;
+        //  spring.damper = flipperDamper;
+        //  if (Ractive == true)
+        ////  {
+        //     spring.targetPosition = pressedPosition;
+        //   }
+        //  else
+        //  {
+        //      spring.targetPosition = restPosition;
+        //  }
+
+        // hinge.spring = spring;
+    }
+    public void pressed()
     {
         JointSpring spring = hinge.spring;
         spring.spring = hitStrength;
         spring.damper = flipperDamper;
 
-        if (Ractive == true)
+        while (Ractive == true)
         {
             spring.targetPosition = pressedPosition;
         }
-        else
+        while (Ractive == false)
         {
             spring.targetPosition = restPosition;
         }
 
         hinge.spring = spring;
-    }
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        Ractive = true;
-    }
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        Ractive = false;
     }
 }
 
