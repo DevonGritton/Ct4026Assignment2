@@ -1,26 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class HighScore : MonoBehaviour
-{
-    public Text TopScore;
-    // Start is called before the first frame update
-    void Start()
-    {
-        TopScore.text = PlayerPrefs.GetInt("UserScore",0).ToString();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(ScoreScript.ScoreValue > PlayerPrefs.GetInt("UserScore", 0))
-        {
-            
-            PlayerPrefs.SetInt("UserScore", ScoreScript.ScoreValue);
-            TopScore.text = ScoreScript.ScoreValue.ToString();
-        }
-        
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a48c51f7ec0aa54f695e6a72b565b62801f26769b48fb5440be156715e068000
+size 668

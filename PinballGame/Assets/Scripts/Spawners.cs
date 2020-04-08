@@ -1,32 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Spawners : MonoBehaviour
-{
-    public Transform launchPoint;
-    public Transform Target;
-    public GameObject[] ActiveBall;
-
-
-    [SerializeField]
-    private float BallSpeed = 40.0f;
-
-    [SerializeField]
-    public GameObject Ball;
-
-    private void fire()
-    {
-        GameObject launch = Instantiate(Ball, launchPoint.position, launchPoint.rotation * Quaternion.Euler(90f, 0f, 0f));
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        ActiveBall = GameObject.FindGameObjectsWithTag("Ball");
-        if (ActiveBall.Length == 0)
-        {
-            fire();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:46f41dec802d10e79ef3403f26a89258bc5b0568422baa7e967b5c6fb483c927
+size 736

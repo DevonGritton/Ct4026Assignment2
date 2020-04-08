@@ -1,19 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
-
-public class sliderScript : MonoBehaviour, IEndDragHandler, IDragHandler
-{
-    public Plunger Plungers;
-    
-    public void OnEndDrag(PointerEventData data)
-    {
-        Plungers.DragEnd = true;
-    }
-    public void OnDrag(PointerEventData Drag)
-    {
-        Plungers.change = true;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea176efb907bacfdca29777434b37b2f073833128459a31c33bf32dbb0eb4c87
+size 451
