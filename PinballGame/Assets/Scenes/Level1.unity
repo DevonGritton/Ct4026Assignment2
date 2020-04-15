@@ -98,7 +98,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 112000000, guid: 2d19121cbd90b94438c1a0e48b280093,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4190,7 +4190,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0d62914db92c5e04fbfa6ac67ab81121, type: 2}
+  - {fileID: 2100000, guid: 29af2491860c53249bdfa4024851d46a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
