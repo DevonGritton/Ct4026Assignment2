@@ -1,12 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class SceneLoader : MonoBehaviour
-{
-   public void Scores()
-    {
-        SceneManager.LoadScene("HighScores");
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:303ec59e257024c1a9fe8dc0f1166da7c1ec1483e68bfc758fc849505947a7ac
+size 257

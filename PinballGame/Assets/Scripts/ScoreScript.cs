@@ -1,27 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-public class ScoreScript : MonoBehaviour
-{
-    Text score;
-   
-    public static int ScoreValue = 10;
-    // Start is called before the first frame update
-    void Start()
-    {
-        score = GetComponent<Text>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        score.text = ScoreValue.ToString();
-    }
-
-    void Score()
-    {
-        PlayerPrefs.SetInt("UserScore", ScoreValue);
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a89f5eb056133af47b32ccc3d923e6bf5151a38eb04494c4460cdfd6d240885a
+size 553
