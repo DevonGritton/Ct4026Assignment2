@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6348410248253453017}
   - component: {fileID: 2684448582493767919}
   - component: {fileID: 8538150515406304278}
+  - component: {fileID: 5793468029916163235}
+  - component: {fileID: 8284552488509988214}
   m_Layer: 0
   m_Name: Mini Bump
   m_TagString: Untagged
@@ -77,3 +79,28 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!135 &5793468029916163235
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7944715487736119498}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.061627164
+  m_Center: {x: 0.0000000066627144, y: -4.1226695e-17, z: 0.019801747}
+--- !u!114 &8284552488509988214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7944715487736119498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f13b8e6fc041e64588bc08e14149023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
