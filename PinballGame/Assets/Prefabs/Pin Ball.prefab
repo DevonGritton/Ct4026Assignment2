@@ -138,8 +138,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dissolveMat: {fileID: 2100000, guid: decf42dd821b71d40ae0a5b27fdc072d, type: 2}
   MaxHealth: 1
-  Health: -1
+  health: -1
   death: 0
+  maxHealth: 10
+  currentHealth: 10
+  active: 0
+  healthbar: {fileID: 0}
+  checker: {fileID: 2100000, guid: 70251570363e94f49a0957a60e018e09, type: 2}
 --- !u!96 &1962850168
 TrailRenderer:
   serializedVersion: 2

@@ -769,9 +769,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 10
+  m_MaxValue: 20
   m_WholeNumbers: 1
-  m_Value: 10
+  m_Value: 2
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1118,10 +1118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0863cf6f9b2f2ff4f9a370c4171831ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
   healthbar: {fileID: 163014640}
   timer: 0
+  checker: {fileID: 0}
 --- !u!65 &191538255
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1346,7 +1345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &242735372
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3949,10 +3948,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0863cf6f9b2f2ff4f9a370c4171831ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
   healthbar: {fileID: 163014640}
   timer: 0
+  checker: {fileID: 0}
 --- !u!65 &747183816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5626,10 +5624,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0863cf6f9b2f2ff4f9a370c4171831ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
   healthbar: {fileID: 163014640}
   timer: 0
+  checker: {fileID: 0}
 --- !u!65 &1147611633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7342,10 +7339,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0863cf6f9b2f2ff4f9a370c4171831ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
   healthbar: {fileID: 163014640}
   timer: 0
+  checker: {fileID: 0}
 --- !u!65 &1857668516
 BoxCollider:
   m_ObjectHideFlags: 0

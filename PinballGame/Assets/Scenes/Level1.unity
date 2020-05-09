@@ -366,10 +366,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0863cf6f9b2f2ff4f9a370c4171831ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
   healthbar: {fileID: 460573652}
-  timer: 0
+  timer: 2
+  checker: {fileID: 2100000, guid: 70251570363e94f49a0957a60e018e09, type: 2}
 --- !u!65 &36675154
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -953,10 +952,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0863cf6f9b2f2ff4f9a370c4171831ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
   healthbar: {fileID: 460573652}
-  timer: 0
+  timer: 2
+  checker: {fileID: 2100000, guid: 70251570363e94f49a0957a60e018e09, type: 2}
 --- !u!65 &272547817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1825,9 +1823,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 10
-  m_WholeNumbers: 1
-  m_Value: 10
+  m_MaxValue: 20
+  m_WholeNumbers: 0
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2201,10 +2199,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0863cf6f9b2f2ff4f9a370c4171831ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
   healthbar: {fileID: 460573652}
-  timer: 0
+  timer: 2
+  checker: {fileID: 2100000, guid: 70251570363e94f49a0957a60e018e09, type: 2}
 --- !u!65 &535000770
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7320,10 +7317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0863cf6f9b2f2ff4f9a370c4171831ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
-  currentHealth: 10
   healthbar: {fileID: 460573652}
-  timer: 0
+  timer: 2
+  checker: {fileID: 2100000, guid: 70251570363e94f49a0957a60e018e09, type: 2}
 --- !u!65 &1797942869
 BoxCollider:
   m_ObjectHideFlags: 0
