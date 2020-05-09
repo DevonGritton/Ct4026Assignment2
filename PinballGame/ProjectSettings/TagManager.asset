@@ -8,6 +8,7 @@ TagManager:
   - Bumper
   - Killbox
   - Effect
+  - GlowBall
   layers:
   - Default
   - TransparentFX

@@ -61,7 +61,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b8fe08b1f4db804093ebedc67dbc2f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  purpleMat: {fileID: 2100000, guid: 70251570363e94f49a0957a60e018e09, type: 2}
+  Moreballs: {fileID: 7969119720893626429, guid: a1d729c3baa3ea9498099ae1a65b70d7,
+    type: 3}
+  Spawnpoint: {fileID: 5997437013232215696, guid: 669d1c27e492ba349ba62b768142fd9d,
+    type: 3}
 --- !u!1 &6624603709758769772
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,7 +665,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 4
+    maxNumParticles: 3
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -5414,7 +5417,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 50
+    maxNumParticles: 30
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -10166,7 +10169,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 16
+    maxNumParticles: 10
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -14918,7 +14921,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 75
+    maxNumParticles: 30
     size3D: 0
     rotation3D: 0
     gravityModifier:
