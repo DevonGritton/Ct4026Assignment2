@@ -1,0 +1,5 @@
+The assets in the imported assets folder are not made by me and can be found on the unity asset store for free under their respective file names 
+Text Mesh Pro
+Starfield Sky
+I have made every other asset by myself
+-Devon Gritton

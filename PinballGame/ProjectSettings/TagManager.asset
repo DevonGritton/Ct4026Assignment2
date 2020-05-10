@@ -9,6 +9,7 @@ TagManager:
   - Killbox
   - Effect
   - GlowBall
+  - Hit
   layers:
   - Default
   - TransparentFX

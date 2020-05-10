@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2684448582493767919}
   - component: {fileID: 8538150515406304278}
   - component: {fileID: 5793468029916163235}
-  - component: {fileID: 8284552488509988214}
+  - component: {fileID: 2787395774436265876}
   m_Layer: 0
   m_Name: Mini Bump
   m_TagString: Untagged
@@ -92,7 +92,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.061627164
   m_Center: {x: 0.0000000066627144, y: -4.1226695e-17, z: 0.019801747}
---- !u!114 &8284552488509988214
+--- !u!114 &2787395774436265876
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
